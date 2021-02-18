@@ -17,7 +17,7 @@ const MongoStore = require("connect-mongo")(session);
   app.use(express.urlencoded({ extended: true }));
 }
 /**
- * -------------- DATABASE --------------------------------------------------------------------------
+ ** -------------- DATABASE --------------------------------------------------------------------------
  */
 mongoose.model(
   "User",
@@ -53,7 +53,7 @@ app.use(
   /**
    * -------------- ROUTES --------------------------------------------------------------------------
    */
-
+  //
   // When you visit http://localhost:3000/login, you will see "Login Page"
   app.get("/login", (req, res, next) => {
     res.send("<h1>Login Page</h1>");
